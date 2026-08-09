@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CAPEL">
+  <!-- The brand concept in one mark: a lens split between the two colour
+       temperatures — 3200K tungsten against 5600K daylight. -->
+  <rect width="64" height="64" fill="#08090a"/>
+  <defs>
+    <clipPath id="lens"><circle cx="32" cy="32" r="19"/></clipPath>
+  </defs>
+  <g clip-path="url(#lens)">
+    <rect x="13" y="13" width="19" height="38" fill="#e0a04a"/>
+    <rect x="32" y="13" width="19" height="38" fill="#6fa8d6"/>
+  </g>
+  <circle cx="32" cy="32" r="19" fill="none" stroke="#08090a" stroke-width="3"/>
+  <circle cx="32" cy="32" r="7" fill="#08090a"/>
+</svg>

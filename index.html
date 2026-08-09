@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       CAPEL — produtora de vídeo e fotografia
+       ⚠️ ANTES DE PUBLICAR: troque todos os "REPLACE WITH ..." pelos
+       dados reais do cliente. A lista completa está no README.md.
+       ============================================================ -->
+
+  <title>CAPEL — Produtora de vídeo e fotografia para marcas e pequenos negócios</title>
+  <meta name="description" content="CAPEL é uma produtora de vídeo e fotografia para marcas e pequenos negócios. Vídeo social, filmes de marca e fotografia de produto — da ideia ao corte final.">
+  <link rel="canonical" href="https://caiomsi.github.io/CAPEL/">
+  <meta name="theme-color" content="#08090a">
+
+  <!-- Open Graph / redes sociais -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="CAPEL">
+  <meta property="og:title" content="CAPEL — Produtora de vídeo e fotografia">
+  <meta property="og:description" content="Vídeo social, filmes de marca e fotografia de produto para marcas e pequenos negócios.">
+  <meta property="og:url" content="https://caiomsi.github.io/CAPEL/">
+  <meta property="og:image" content="https://caiomsi.github.io/CAPEL/images/capel-set-de-filmagem.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="CAPEL — Produtora de vídeo e fotografia">
+  <meta name="twitter:description" content="Vídeo social, filmes de marca e fotografia de produto para marcas e pequenos negócios.">
+  <meta name="twitter:image" content="https://caiomsi.github.io/CAPEL/images/capel-set-de-filmagem.jpg">
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+  <!-- Fontes: Bodoni Moda (display) · Manrope (corpo) · JetBrains Mono (timecodes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Dados estruturados. REPLACE WITH: telefone, cidade, estado, CEP, Instagram. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "CAPEL",
+    "description": "Produtora de vídeo e fotografia para marcas e pequenos negócios.",
+    "url": "https://caiomsi.github.io/CAPEL/",
+    "image": "https://caiomsi.github.io/CAPEL/images/capel-set-de-filmagem.jpg",
+    "priceRange": "$$",
+    "telephone": "REPLACE WITH TELEFONE (+55 34 90000-0000)",
+    "email": "REPLACE WITH E-MAIL",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "REPLACE WITH ENDEREÇO",
+      "addressLocality": "REPLACE WITH CIDADE",
+      "addressRegion": "REPLACE WITH UF",
+      "postalCode": "REPLACE WITH CEP",
+      "addressCountry": "BR"
+    },
+    "areaServed": "REPLACE WITH CIDADE/REGIÃO ATENDIDA",
+    "sameAs": ["REPLACE WITH URL DO INSTAGRAM"],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Vídeo social (Reels, TikTok e Shorts)" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Filmes de marca e campanhas" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fotografia de produto e de marca" } }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ============================ NAV ============================ -->
+  <header class="nav" id="top">
+    <div class="nav-inner">
+      <a class="brand" href="#top" aria-label="CAPEL — início">
+        <span class="brand-word">CAPEL</span>
+        <span class="brand-sub">Vídeo &amp; Foto</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#trabalho">Trabalho</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#processo">Processo</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <!-- REPLACE WITH: número real de WhatsApp (formato 55DDDNÚMERO) -->
+        <li><a class="nav-cta" href="https://wa.me/55REPLACEWITHWHATSAPP?text=Oi%2C%20CAPEL!%20Quero%20um%20or%C3%A7amento." rel="noopener">Orçamento</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="hero-media">
+        <!-- Loop mudo: é o portfólio antes de qualquer texto. O poster
+             cobre o carregamento para nunca piscar preto no mobile. -->
+        <video
+          id="heroVideo"
+          poster="images/capel-set-de-filmagem.jpg"
+          autoplay muted loop playsinline preload="metadata"
+          aria-hidden="true" tabindex="-1">
+          <source src="video/capel-reel-loop.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="hero-content">
+        <p class="hero-kicker">00:00:01 &nbsp;/&nbsp; Produtora de vídeo e fotografia</p>
+        <h1 class="hero-title">Marcas que as pessoas <em>param</em> para ver.</h1>
+        <p class="hero-lede">
+          Vídeo e fotografia para marcas e pequenos negócios. Da primeira
+          conversa ao corte final, com a mesma direção de arte do primeiro
+          ao último frame.
+        </p>
+        <div class="hero-actions">
+          <!-- REPLACE WITH: número real de WhatsApp -->
+          <a class="btn btn-solid" href="https://wa.me/55REPLACEWITHWHATSAPP?text=Oi%2C%20CAPEL!%20Quero%20um%20or%C3%A7amento." rel="noopener">Falar no WhatsApp</a>
+          <a class="btn btn-ghost" href="#trabalho">Ver o trabalho</a>
+        </div>
+      </div>
+
+      <div class="hero-foot"><span class="scroll-hint">Role</span></div>
+    </section>
+
+    <!-- ============================ TICKER ============================ -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Vídeo social</span><span>Filmes de marca</span><span>Fotografia de produto</span>
+        <span>Reels &amp; Shorts</span><span>Direção de arte</span><span>Roteiro</span>
+        <span>Cor</span><span>Finalização</span>
+        <span>Vídeo social</span><span>Filmes de marca</span><span>Fotografia de produto</span>
+        <span>Reels &amp; Shorts</span><span>Direção de arte</span><span>Roteiro</span>
+        <span>Cor</span><span>Finalização</span>
+      </div>
+    </div>
+
+    <!-- ============================ SERVIÇOS ============================ -->
+    <section class="section servicos" id="servicos">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tc">00:01:12</span>
+          <h2 class="section-name">O que fazemos</h2>
+          <span class="section-note">Três frentes</span>
+        </header>
+
+        <div class="services">
+          <article class="service reveal">
+            <span class="tc service-tc">№ 01</span>
+            <h3>Vídeo social</h3>
+            <p>Conteúdo vertical para Reels, TikTok e Shorts — feito em lote, no ritmo que o algoritmo cobra, sem perder a cara da marca.</p>
+            <ul>
+              <li>Roteiro e planejamento de pauta</li>
+              <li>Diária de gravação</li>
+              <li>Edição, legenda e trilha</li>
+              <li>Entrega mensal recorrente</li>
+            </ul>
+            <p class="service-price">A partir de <b>REPLACE WITH PREÇO</b></p>
+          </article>
+
+          <article class="service reveal">
+            <span class="tc service-tc">№ 02</span>
+            <h3>Filmes de marca</h3>
+            <p>O filme que explica quem você é em noventa segundos. Institucional, campanha ou manifesto — roteiro, produção e finalização.</p>
+            <ul>
+              <li>Imersão e roteiro</li>
+              <li>Direção e produção</li>
+              <li>Trilha, cor e finalização</li>
+              <li>Cortes para cada canal</li>
+            </ul>
+            <p class="service-price">A partir de <b>REPLACE WITH PREÇO</b></p>
+          </article>
+
+          <article class="service reveal">
+            <span class="tc service-tc">№ 03</span>
+            <h3>Fotografia</h3>
+            <p>Imagem parada que sustenta o site, o catálogo e o feed. Produto, ambiente e retrato de marca, no mesmo padrão do vídeo.</p>
+            <ul>
+              <li>Fotografia de produto</li>
+              <li>Ambiente e bastidores</li>
+              <li>Retrato de marca e equipe</li>
+              <li>Tratamento e entrega em alta</li>
+            </ul>
+            <p class="service-price">A partir de <b>REPLACE WITH PREÇO</b></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ TRABALHO ============================ -->
+    <!-- ⚠️ As imagens abaixo são DIREÇÃO DE REFERÊNCIA, não trabalhos
+         entregues. Substituir por material real do cliente antes de
+         publicar — ver README.md. -->
+    <section class="section section-alt trabalho" id="trabalho">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tc">00:03:40</span>
+          <h2 class="section-name">Trabalho</h2>
+          <span class="section-note">Direção de referência</span>
+        </header>
+
+        <div class="work-grid reveal">
+          <figure class="work-card">
+            <img src="images/capel-fotografia-de-produto.jpg" alt="Fotografia de produto: embalagem sobre superfície escura, iluminada por uma luz quente lateral" loading="lazy" width="1600" height="1067">
+            <figcaption class="work-info">
+              <span class="work-title">Produto no escuro</span>
+              <span class="work-tag">Fotografia · Still</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="images/capel-filme-de-marca-lojista.jpg" alt="Frame de filme de marca: lojista atrás do balcão do próprio negócio ao entardecer" loading="lazy" width="1600" height="1067">
+            <figcaption class="work-info">
+              <span class="work-title">Quem faz</span>
+              <span class="work-tag">Filme de marca · Frame</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="images/capel-video-social-vertical.jpg" alt="Frame vertical de vídeo social: mãos servindo café com vapor contra fundo escuro" loading="lazy" width="1080" height="1920">
+            <figcaption class="work-info">
+              <span class="work-title">Formato vertical</span>
+              <span class="work-tag">Vídeo social · 9:16</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="images/capel-setup-de-iluminacao.jpg" alt="Bastidores: dois refletores iluminando um set escuro com névoa, luz quente de um lado e fria do outro" loading="lazy" width="1600" height="1200">
+            <figcaption class="work-info">
+              <span class="work-title">3200K contra 5600K</span>
+              <span class="work-tag">Bastidores · Luz</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="images/capel-lente-de-cinema.jpg" alt="Detalhe macro de uma lente de cinema e matte box com reflexo de luz quente" loading="lazy" width="1600" height="1200">
+            <figcaption class="work-info">
+              <span class="work-title">Equipamento</span>
+              <span class="work-tag">Detalhe · Macro</span>
+            </figcaption>
+          </figure>
+
+          <figure class="work-card">
+            <img src="images/capel-bastidores-loja.jpg" alt="Bastidores de gravação dentro de uma pequena loja à noite, operador com câmera em gimbal" loading="lazy" width="1600" height="1067">
+            <figcaption class="work-info">
+              <span class="work-title">Na loja</span>
+              <span class="work-tag">Bastidores · Locação</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROCESSO ============================ -->
+    <section class="section processo" id="processo">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tc">00:06:20</span>
+          <h2 class="section-name">Como funciona</h2>
+          <span class="section-note">Quatro etapas</span>
+        </header>
+
+        <div class="process">
+          <article class="step reveal">
+            <span class="tc">00:00</span>
+            <h3>Briefing</h3>
+            <p>Uma conversa para entender o negócio, o público e o que precisa acontecer depois que o vídeo termina.</p>
+          </article>
+          <article class="step reveal">
+            <span class="tc">00:01</span>
+            <h3>Roteiro</h3>
+            <p>Ideia, referências e roteiro aprovados antes de qualquer câmera sair da bolsa. Nada é gravado no escuro.</p>
+          </article>
+          <article class="step reveal">
+            <span class="tc">00:02</span>
+            <h3>Produção</h3>
+            <p>Diária de gravação com equipe enxuta, luz própria e som direto. Rápido no seu espaço, sem virar transtorno.</p>
+          </article>
+          <article class="step reveal">
+            <span class="tc">00:03</span>
+            <h3>Entrega</h3>
+            <p>Edição, cor e finalização, com uma rodada de ajustes inclusa. Cortes prontos para cada canal onde a marca vive.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ SOBRE ============================ -->
+    <section class="section section-alt sobre" id="sobre">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tc">00:08:05</span>
+          <h2 class="section-name">Sobre a CAPEL</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="reveal">
+            <p class="about-copy">
+              Toda marca já tem uma boa história. O que quase nunca existe é
+              alguém para <em>iluminar</em> ela direito.
+            </p>
+            <p>
+              A CAPEL é uma produtora pequena por opção. Trabalhamos com marcas
+              e negócios locais que não têm departamento de marketing, mas têm
+              algo que merece ser filmado bem — e tratamos cada projeto com o
+              mesmo cuidado de luz, som e montagem, seja um Reels de quinze
+              segundos ou um filme institucional.
+            </p>
+            <p>
+              Sem pacote genérico, sem banco de imagens, sem entregar arquivo e
+              sumir. A gente fica junto até o material estar no ar.
+            </p>
+
+            <div class="about-facts">
+              <dl>
+                <div><dt>Atende</dt><dd>REPLACE WITH CIDADE / REGIÃO</dd></div>
+                <div><dt>Desde</dt><dd>REPLACE WITH ANO</dd></div>
+                <div><dt>Formatos</dt><dd>Vertical, horizontal e still</dd></div>
+                <div><dt>Prazo médio</dt><dd>REPLACE WITH PRAZO</dd></div>
+              </dl>
+            </div>
+          </div>
+
+          <figure class="about-portrait reveal" style="margin:0">
+            <img src="images/capel-retrato-de-marca.jpg" alt="Retrato de marca em estúdio, luz quente de um lado e recorte azul frio do outro sobre fundo escuro" loading="lazy" width="1200" height="1600">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ CONTATO ============================ -->
+    <section class="section contato" id="contato">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="tc">00:09:58</span>
+          <h2 class="section-name">Contato</h2>
+        </header>
+
+        <div class="contact-grid">
+          <div class="reveal">
+            <h3 class="contact-title">Conta o que você precisa filmar.</h3>
+            <p class="contact-lede">
+              Responder leva pouco. Se já tiver data, local ou uma referência
+              na cabeça, manda junto — encurta metade da conversa.
+            </p>
+
+            <ul class="contact-lines">
+              <!-- REPLACE WITH: dados reais de contato -->
+              <li><span class="k">WhatsApp</span><a class="v" href="https://wa.me/55REPLACEWITHWHATSAPP?text=Oi%2C%20CAPEL!%20Quero%20um%20or%C3%A7amento." rel="noopener">REPLACE WITH TELEFONE</a></li>
+              <li><span class="k">E-mail</span><a class="v" href="mailto:REPLACE-WITH-EMAIL">REPLACE WITH E-MAIL</a></li>
+              <li><span class="k">Instagram</span><a class="v" href="https://instagram.com/REPLACEWITHINSTAGRAM" rel="noopener">@REPLACE WITH INSTAGRAM</a></li>
+              <li><span class="k">Base</span><span class="v">REPLACE WITH CIDADE — UF</span></li>
+            </ul>
+
+            <a class="btn btn-solid" href="https://wa.me/55REPLACEWITHWHATSAPP?text=Oi%2C%20CAPEL!%20Quero%20um%20or%C3%A7amento." rel="noopener">Chamar no WhatsApp</a>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <p class="form-note">
+              Prefere escrever? Preencha abaixo — cai direto no nosso e-mail.
+            </p>
+
+            <div class="field">
+              <label for="cf-name">Nome</label>
+              <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            </div>
+
+            <div class="field">
+              <label for="cf-email">E-mail ou WhatsApp</label>
+              <input type="text" id="cf-email" name="email" autocomplete="email" required>
+            </div>
+
+            <div class="field">
+              <label for="cf-service">O que você precisa</label>
+              <select id="cf-service" name="service">
+                <option>Vídeo social (Reels / TikTok)</option>
+                <option>Filme de marca</option>
+                <option>Fotografia</option>
+                <option>Ainda não sei</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="cf-message">Conta um pouco do projeto</label>
+              <textarea id="cf-message" name="message" rows="5" required></textarea>
+            </div>
+
+            <!-- Honeypot: humanos nunca veem isso -->
+            <div class="visually-hidden" aria-hidden="true">
+              <label for="cf-company">Empresa</label>
+              <input type="text" id="cf-company" name="company" tabindex="-1" autocomplete="off">
+            </div>
+
+            <button class="btn btn-solid" type="submit">Enviar</button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================ FOOTER ============================ -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-word" aria-hidden="true">CAPEL</p>
+      <div class="footer-row">
+        <p>© <span id="year">2026</span> CAPEL · Vídeo e fotografia</p>
+        <ul class="footer-links">
+          <li><a href="#trabalho">Trabalho</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="https://instagram.com/REPLACEWITHINSTAGRAM" rel="noopener">Instagram</a></li>
+        </ul>
+        <p class="footer-credit">Site por <a href="https://caiomsi.com" rel="noopener">MSI Studio</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
