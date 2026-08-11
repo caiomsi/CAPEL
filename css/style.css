@@ -77,10 +77,6 @@ em{color:var(--tungsten);font-style:italic}
 .container{max-width:var(--maxw);margin:0 auto;padding:0 1.5rem;width:100%}
 ::selection{background:var(--tungsten);color:var(--void)}
 
-.visually-hidden{
-  position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden;
-}
-
 /* Timecode — this page's folio number. Editorial, never a link. */
 .tc{
   font-family:var(--font-mono);font-size:.7rem;font-weight:700;
@@ -388,30 +384,40 @@ em{color:var(--tungsten);font-style:italic}
 .contact-lines a.v{color:var(--daylight);transition:color .25s}
 .contact-lines a.v:hover{color:var(--daylight-bright)}
 
-.contact-form{
+/* "O que mandar na primeira mensagem" — este bloco substitui o antigo
+   formulário. O site não tem back-end: todo contato vai para o WhatsApp. */
+.contact-brief{
   border:1px solid var(--line);padding:clamp(1.5rem,4vw,2.2rem);
   background:var(--void-surface);
 }
-.form-note{
-  margin:0 0 1.5rem;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.03em;
-  line-height:1.7;color:var(--grey);
+.brief-title{
+  margin:0 0 1.4rem;font-family:var(--font-mono);font-size:.68rem;font-weight:700;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--grey);
   border-left:2px solid var(--tungsten-dim);padding-left:.9rem;
 }
-.field{margin-bottom:1.1rem}
-.field label{
-  display:block;font-family:var(--font-mono);font-size:.64rem;letter-spacing:.16em;
-  text-transform:uppercase;color:var(--grey);margin-bottom:.4rem;
+.brief-list{
+  margin:0;padding:0;list-style:none;counter-reset:brief;
+  border-top:1px solid var(--line-soft);
 }
-.field input,.field textarea,.field select{
-  width:100%;background:var(--void);border:1px solid var(--line);color:var(--bone);
-  font-family:var(--font-body);font-size:.95rem;padding:.78rem .9rem;
-  transition:border-color .25s;resize:vertical;
+.brief-list li{
+  counter-increment:brief;position:relative;
+  padding:.85rem 0 .85rem 2.4rem;border-bottom:1px solid var(--line-soft);
+  font-size:.95rem;color:var(--ash);
 }
-.field input:focus,.field textarea:focus,.field select:focus{outline:none;border-color:var(--daylight)}
-.form-status{
-  margin:1rem 0 0;min-height:1.4em;
-  font-family:var(--font-mono);font-size:.7rem;letter-spacing:.06em;color:var(--grey);
+.brief-list li::before{
+  content:"0" counter(brief);position:absolute;left:0;top:.95rem;
+  font-family:var(--font-mono);font-size:.68rem;font-weight:700;
+  letter-spacing:.1em;color:var(--tungsten);
 }
+.brief-foot{
+  margin:1.4rem 0 0;font-family:var(--font-mono);font-size:.68rem;
+  letter-spacing:.06em;line-height:1.7;color:var(--grey);
+}
+
+/* Botão do WhatsApp com ícone */
+.btn-wa{display:inline-flex;align-items:center;gap:.6rem}
+.wa-icon{width:1.05em;height:1.05em;flex:none}
+
 @media(max-width:880px){.contact-grid{grid-template-columns:1fr}}
 
 /* ---------- footer ---------- */

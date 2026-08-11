@@ -78,71 +78,10 @@
     }
   }
 
-  /* ---------- formulário de contato ----------
-     Vai para o backend compartilhado MSI-Forms. A origem
-     caiomsi.github.io já está liberada; o campo "site" separa os leads
-     da CAPEL dos outros projetos hospedados no mesmo domínio. */
-  var form = document.getElementById('contactForm');
-  var status = document.getElementById('formStatus');
-
-  function setStatus(text) {
-    if (status) status.textContent = text;
-  }
-
-  if (form) {
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-
-      var name = form.querySelector('#cf-name');
-      var email = form.querySelector('#cf-email');
-      var message = form.querySelector('#cf-message');
-      var service = form.querySelector('#cf-service');
-      var company = form.querySelector('#cf-company');
-      if (!name || !email || !message) return;
-
-      if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
-        setStatus('— Preencha nome, contato e mensagem.');
-        return;
-      }
-
-      var button = form.querySelector('button[type="submit"]');
-      if (button) button.disabled = true;
-      setStatus('— Enviando…');
-
-      // O serviço escolhido entra no corpo da mensagem para não depender
-      // de um campo novo no backend.
-      var body = service && service.value
-        ? '[' + service.value + '] ' + message.value.trim()
-        : message.value.trim();
-
-      fetch('https://forms.caiomsi.com/api/submit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          site: 'capel',
-          name: name.value.trim(),
-          email: email.value.trim(),
-          message: body,
-          company: company ? company.value : ''
-        })
-      })
-        .then(function (res) { return res.json().catch(function () { return {}; }); })
-        .then(function (data) {
-          if (data && data.ok) {
-            form.reset();
-            setStatus('— Recebido. Respondemos rápido.');
-          } else {
-            setStatus('— ' + ((data && data.error) || 'Algo deu errado. Tenta de novo?'));
-          }
-        })
-        .catch(function () {
-          setStatus('— Falha de conexão. Tenta de novo em instantes.');
-        })
-        .finally(function () {
-          if (button) button.disabled = false;
-        });
-    });
-  }
+  /* Não existe formulário nem back-end: todo contato vai direto para o
+     WhatsApp, pelos links <a href="https://wa.me/..."> no index.html.
+     Por isso o site funciona em qualquer lugar — inclusive abrindo o
+     index.html direto do computador, sem internet para o servidor. */
 
   /* ---------- ano do rodapé ---------- */
   var year = document.getElementById('year');
